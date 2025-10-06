@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Image Slider</h1>
+    <div class="slider">
+      <!-- Navigation Arrows -->
+      <button
+        class="arrow prev"
+        onclick="changeSlide(-1)"
+        aria-label="Previous slide"
+      >
+        &#10094;
+      </button>
+
+      <!-- Slide Track -->
+      <div class="slides">
+        <div class="img image01" role="img" aria-label="Image 1"></div>
+        <div class="img image02" role="img" aria-label="Image 2"></div>
+        <div class="img image03" role="img" aria-label="Image 3"></div>
+        <div class="img image04" role="img" aria-label="Image 4"></div>
+        <div class="img image05" role="img" aria-label="Image 5"></div>
+        <div class="img image06" role="img" aria-label="Image 6"></div>
+        <div class="img image07" role="img" aria-label="Image 7"></div>
+        <div class="img image08" role="img" aria-label="Image 8"></div>
+        <div class="img image09" role="img" aria-label="Image 9"></div>
+        <div class="img image10" role="img" aria-label="Image 10"></div>
+      </div>
+
+      <button
+        class="arrow next"
+        onclick="changeSlide(1)"
+        aria-label="Next slide"
+      >
+        &#10095;
+      </button>
+    </div>
+
+    <script src="slider.js"></script>
+  </body>
+</html>
